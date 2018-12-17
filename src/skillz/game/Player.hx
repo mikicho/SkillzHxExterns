@@ -3,6 +3,7 @@ package skillz.game;
 /**
  This class represents a player in the game.
  */
+@:native('Player') 
 extern class Player extends BaseObject
 {
 	/**

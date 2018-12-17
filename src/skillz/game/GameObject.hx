@@ -3,6 +3,7 @@ package skillz.game;
 /**
  This class represents any object on the game board.
  */
+@:native('GameObject') 
 extern class GameObject extends MapObject
 {
 	/**

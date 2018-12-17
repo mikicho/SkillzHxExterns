@@ -4,6 +4,7 @@ package skillz.game;
  This class represents a elf.
  Elves are actors that can build buildings. They can also move and attack other objects that are on the map.
  */
+@:native('Elf') 
 extern class Elf extends GameObject
 {
 	/**

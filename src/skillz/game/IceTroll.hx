@@ -3,6 +3,7 @@ package skillz.game;
 /**
  This class represents an ice troll. Ice trolls chase and attack the closest enemy creature or elf.
  */
+@:native('IceTroll') 
 extern class IceTroll extends Creature
 {
 	/**

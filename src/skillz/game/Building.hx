@@ -5,6 +5,7 @@ package skillz.game;
  Buildings include castles and portals,
  and cannot be built within the range of one another.
  */
+@:native('Building')
 extern class Building extends GameObject
 {
 	/**

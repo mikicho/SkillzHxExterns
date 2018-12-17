@@ -6,6 +6,7 @@ package skillz.game;
  
  @see 'Game' Is probably the class you are looking for!
  */
+@:native('BaseObject')
 extern class BaseObject
 {
 	/**

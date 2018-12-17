@@ -4,6 +4,7 @@ package skillz.game;
  This class represents a creature.
  Creatures are game objects which can be summoned from a portal.
  */
+@:native('Creature') 
 extern class Creature extends GameObject
 {
 	/**

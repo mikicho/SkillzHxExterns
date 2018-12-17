@@ -3,6 +3,7 @@ package skillz.game;
 /**
  This class represents a location on the game map.
  */
+@:native('Location')
 extern class Location extends MapObject
 {
 	/**

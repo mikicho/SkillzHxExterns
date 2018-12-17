@@ -4,6 +4,7 @@ package skillz.game;
  This class represents a portal.
  Portal are objects that can be built by Elves and Creatures can be summoned in.
  */
+@:native('Portal') 
 extern class Portal extends Building
 {
 	/**
