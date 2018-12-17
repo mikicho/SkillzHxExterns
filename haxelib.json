@@ -1,0 +1,11 @@
+{
+    "name": "skillz",
+    "url" : "",
+    "license": "MIT",
+    "tags": [],
+    "description": "Externs for skillz tournament Game API",
+    "version": "0.0.1",
+    "classPath": "src/",
+    "releasenote": "Initial release",
+    "contributors": ["MichaelSolomon"]
+  }
