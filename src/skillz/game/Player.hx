@@ -8,53 +8,53 @@ extern class Player extends BaseObject
 	/**
 	 The player's id.
 	 */
-	id:Int;
+	var id:Int;
 	/**
 	 The player's score.
 	 */
-	score:Int;
+	var score:Int;
 	/**
 	 Returns whether or not the object is the same as this one.
 	 @param other The object to compare to.
 	 @returns Whether or not the object is the same as this one.
 	 */
-	equals(other:any):boolean;
+	function equals(other:Any):Bool;
 	/**
 	 Gets the player's hash code. This is used by maps and dictionaries.
 	 @returns The player's hash code. This is used by maps and dictionaries.
 	 */
-	hashCode():Int;
+	function hashCode():Int;
 	/**
 	 Returns a string representing the player.
 	 @returns A string representing the player.
 	 */
-	toString():String;
+	function toString():String;
 	/**
 	 The amount of mana the player has.
 	 */
-	mana:Int;
+	var mana:Int;
 	/**
 	 The amount of mana the player gets every turn.
 	 */
-	manaPerTurn:Int;
+	var manaPerTurn:Int;
 	/**
 	 All living creatures belonging to the player.
 	 */
-	creatures:Creature[];
+	var creatures:Array<Creature>;
 	/**
 	 All living lava giants which belong to the player.
 	 */
-	lavaGiants:LavaGiant[];
+	var lavaGiants:Array<LavaGiant>;
 	/**
 	 All living ice trolls which belong to the player.
 	 */
-	iceTrolls:IceTroll[];
+	var iceTrolls:Array<IceTroll>;
 	/**
 	 All elves belonging to the player.
 	 */
-	allElves:Elf[];
+	var allElves:Array<Elf>;
 	/**
 	 All living elves belonging to the player.
 	 */
-	livingElves:Elf[];
+	var livingElves:Array<Elf>;
 }

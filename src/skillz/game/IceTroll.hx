@@ -8,5 +8,5 @@ extern class IceTroll extends Creature
 	/**
 	 The health subtracted each turn by suffocation for the IceTroll.
 	 */
-	suffocationPerTurn:Int;
+	var suffocationPerTurn:Int;
 }

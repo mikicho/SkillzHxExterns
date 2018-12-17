@@ -11,21 +11,21 @@ extern class BaseObject
 	/**
 	 The name of this object's class.
 	 */
-	type:String;
+	var type:String;
 	/**
 	 Returns whether the object is the same as this one.
 	 @param other The object to compare to.
 	 @returns Whether the object is the same as this one.
 	 */
-	equals(other:any):boolean;
+	function equals(other:Any):Bool;
 	/**
 	 Gets the objects hash code. This is used by maps and dictionaries.
 	 @returns The objects hash code. This is used by maps and dictionaries.
 	 */
-	hashCode():Int;
+	function hashCode():Int;
 	/**
 	 Returns a string representing the object.
 	 @returns A string representing the object.
 	 */
-	toString():String;
+	function toString():String;
 }

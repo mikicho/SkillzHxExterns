@@ -11,7 +11,7 @@ extern class Location extends MapObject
 	 @param row The row of the location.
 	 @param col The col of the location.
 	 */
-	constructor(row:Int, col:Int);
+	function new(row:Int, col:Int);
 	/**
 	 Returns the object's location.
 	 
@@ -19,50 +19,50 @@ extern class Location extends MapObject
 	 
 	 @returns The object's location.
 	 */
-	getLocation():Location;
+	function getLocation():Location;
 	/**
 	 The row of the location.
 	 */
-	row:Int;
+	var row:Int;
 	/**
 	 The col of the location.
 	 */
-	col:Int;
+	var col:Int;
 	/**
 	 Returns whether the object given is the same as this one.
 	 @param other The object to compare to.
 	 @returns Whether the object given is the same as this one.
 	 */
-	equals(other:any):boolean;
+	function equals(other:Any):Bool;
 	/**
 	 Adds the given location to the current one. See helper file on the Location API (under `Info Pages` on the sidebar).
 	 @param other The location to add.
 	 @returns The sum of the locations.
 	 */
-	add(other:Location):Location;
+	function add(other:Location):Location;
 	/**
 	 Subtracts the given location from the current one. See helper file on the Location API in the website (under `Info Pages` on the sidebar).
 	 @param other The location to subtract.
 	 @returns The difference of the locations.
 	 */
-	subtract(other:Location):Location;
+	function subtract(other:Location):Location;
 	/**
 	 Multiplies the location by a given number. In case the given number is a float, the function rounds towards the center of the map
 	 See helper file on the Location API (under `Info Pages` on the sidebar).
 	 @param factor The number to multiply the location by.
 	 @returns The location multiplied by the given number.
 	 */
-	multiply(factor:Int):Location;
+	function multiply(factor:Int):Location;
 	/**
 	 Gets the objects hash code. This is used by maps and dictionaries.
 	 @returns The objects hash code. This is used by maps and dictionaries.
 	 */
-	hashCode():Int;
+	function hashCode():Int;
 	/**
 	 Returns a string representing the location object.
 	 @returns A string representing the location object, in the format (row, col).
 	 */
-	toString():String;
+	function toString():String;
 	/**
 	 Determines whether or not this location and the other location are within the given range.
 	 This is equivalent to "!api(distance)(other) <= range"
@@ -70,13 +70,13 @@ extern class Location extends MapObject
 	 @param range The max range between the locations.
 	 @returns Whether or not this location and the other location are within the given range or not.
 	 */
-	inRange(other:MapObject, range:Int):boolean;
+	function inRange(other:MapObject, range:Int):Bool;
 	/**
 	 Gets the distance between this location and another location.
 	 @param other The other location.
 	 @returns The distance between this location and the other location.
 	 */
-	distance(other:MapObject):Int;
+	function distance(other:MapObject):Int;
 	/**
 	 Calculates the final location if the object moves towards location "other" with distance "length".
 	 
@@ -98,5 +98,5 @@ extern class Location extends MapObject
 	 @param length The distance to travel.
 	 @returns The final location.
 	 */
-	towards(other:MapObject, length:Int):Location;
+	function towards(other:MapObject, length:Int):Location;
 }

@@ -8,5 +8,5 @@ extern class LavaGiant extends Creature
 	/**
 	 The health subtracted each turn by suffocation for the LavaGiant.
 	 */
-	suffocationPerTurn:Int;
+	var suffocationPerTurn:Int;
 }

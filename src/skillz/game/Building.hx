@@ -10,5 +10,5 @@ extern class Building extends GameObject
 	/**
 	 The size of the building. Within this range, other buildings cannot be built.
 	 */
-	size:Int;
+	var size:Int;
 }

@@ -9,31 +9,31 @@ extern class Portal extends Building
 	/**
 	 Returns if this portal can summon a lava giant.
 	 */
-	canSummonLavaGiant():boolean;
+	function canSummonLavaGiant():Bool;
 	/**
 	 Returns if this portal can summon an ice troll.
 	 */
-	canSummonIceTroll():boolean;
+	function canSummonIceTroll():Bool;
 	/**
 	 Orders this portal to summon a lava giant.
 	 */
-	summonLavaGiant():void;
+	function summonLavaGiant():Void;
 	/**
 	 Orders this portal to summon an ice troll.
 	 */
-	summonIceTroll():void;
+	function summonIceTroll():Void;
 	/**
 	 The creature that is currently being summoned in the portal.
 	 When the portal is not summoning, this is equal to @null.
 	 */
-	inSummoning:String;
+	var inSummoning:String;
 	/**
 	 Whether or not the portal is currently summoning a creature.
 	 */
-	isSummoning:boolean;
+	var isSummoning:Bool;
 	/**
 	 The turns left until the creature is fully summoned.
 	 If the portal is not summoning, this is -1.
 	 */
-	turnsToSummon:Int;
+	var turnsToSummon:Int;
 }

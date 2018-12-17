@@ -19,7 +19,7 @@ extern class Game extends BaseObject
 		 
 		 @param arg The object/message to debug.
 		 */
-		debug(arg:any):void;
+		debug(arg:any):Void;
 		/**
 		 Returns my player object.
 		 @returns My player object.
@@ -164,7 +164,7 @@ extern class Game extends BaseObject
 		 @param mapObject The map object to check.
 		 @return Whether or not the given map object is within the map.
 		 */
-		inMap(mapObject:MapObject):boolean;
+		inMap(mapObject:MapObject):Bool;
 		/**
 		 The Elf's spawn turns.
 		 */
@@ -247,7 +247,7 @@ extern class Game extends BaseObject
 		/**
 		 Returns whether a portal can be built in the given location.
 		 */
-		canBuildPortalAt(location:Location):boolean;
+		canBuildPortalAt(location:Location):Bool;
 		/**
 		 The cost of the portal.
 		 */

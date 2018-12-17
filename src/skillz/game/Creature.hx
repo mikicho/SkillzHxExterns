@@ -9,21 +9,21 @@ extern class Creature extends GameObject
 	/**
 	 The maximum speed of the creature (maximum distance it can move in a single turn).
 	 */
-	maxSpeed:Int;
+	var maxSpeed:Int;
 	/**
 	 The attack range of the creature.
 	 */
-	attackRange:Int;
+	var attackRange:Int;
 	/**
 	 The attack damage of the creature.
 	 */
-	attackMultiplier:Int;
+	var attackMultiplier:Int;
 	/**
 	 The portal that is currently summoning this creature
 	 */
-	summoner:Portal;
+	var summoner:Portal;
 	/**
 	 The turns it takes the portal to summon a creature.
 	 */
-	summoningDuration:Int;
+	var summoningDuration:Int;
 }
